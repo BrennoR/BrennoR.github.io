@@ -1,31 +1,33 @@
-/* Style all font awesome icons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  background-color: rgba(100, 100, 100, 0.5);
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
 .big-banner {
-    background-image: url("../static/images/grad_test.png");
+    background-image: url("../static/images/ny_site_test.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.custom-border {
-    text-align: center;
-    width: 400px;
-    color: white;
-    border: 10px solid white;
+.small-banner {
+    background-image: url("../static/images/mountains_test.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 120px;
 }
+
+.link-test {
+    display: block;
+    margin: 0 7px;
+    text-indent: -9999px;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+}
+
+.link-test:hover {
+    color: white;
+    /*background-color: white;*/
+    opacity: 0.6;
+}
+
 
