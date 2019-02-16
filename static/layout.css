@@ -30,4 +30,8 @@
     opacity: 0.6;
 }
 
+#particles-js {
+    background: whitesmoke;
+    height: 650px;
+}
 

@@ -4,13 +4,75 @@
     <meta charset="UTF-8">
     <title>Title</title>
     {% include 'includes/_links.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-    <div class="small-banner">
+
+    <div id="particles-js">
         {% include 'includes/_navbar.html' %}
 
-        <h1 class="ml-4 mt-2" style="color: white">Projects</h1>
+        <div class="container", style="position: absolute">
+
+          <div class=" ml-3">
+            <a href="javascript:void(0)" onclick="openProjects(event, 'All');">
+              <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding", style="width: 15rem">All</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openProjects(event, 'Scientific');">
+              <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding", style="width: 15rem">Scientific</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openProjects(event, 'iOS');">
+              <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding", style="width: 15rem">iOS</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openProjects(event, 'Machine Learning');">
+              <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding", style="width: 15rem">Machine Learning</div>
+            </a>
+          </div>
+
+          <div id="All" class="w3-container city" style="display:none">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+          </div>
+
+          <div id="Scientific" class="w3-container city" style="display:none">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+          </div>
+
+          <div id="iOS" class="w3-container city" style="display:none">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+
+          <div id="Machine Learning" class="w3-container city" style="display:none">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+        </div>
+
     </div>
+
+    <script>
+        function openProjects(evt, cityName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("city");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-border-red";
+        }
+    </script>
+
+    <script>
+        particlesJS.load("particles-js", "../static/particles/particles.json", function(){
+            console.log('particles loaded');
+        })
+    </script>
 
 </body>
 </html>

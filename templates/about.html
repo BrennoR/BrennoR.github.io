@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <title>Title</title>
     {% include 'includes/_links.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div class="small-banner">
+    <div id="particles-js">
         {% include 'includes/_navbar.html' %}
 
-        <h1 class="ml-4 mt-2" style="color: white">About</h1>
+        <div class="col col-lg-6" style="position: absolute;">
+            <h1>About</h1>
+
+            <h2 class="mt-5">Hi, I'm Brenno!</h2>
+            <p>I am a mechanical engineer, software developer, and aspiring machine learning specialist.
+            I like to build mobile applications and employ ML algorithms to solve complex data problems.
+            I thoroughly enjoy learning and am constantly expanding my skillset. When I'm not coding, I love
+            to spend my time surfing, playing the guitar, or weightlifting.
+            <br/>
+            <br/>
+            Please take a look around my site to learn a little bit more about me and don't hesitate to contact!
+            </p>
+        </div>
+
     </div>
 
-    <div class="col ml-2 mt-3">
-        <h1>Hi, I'm Brenno!</h1>
-        <p>I'm an aspiring software developer trained as a mechanical engineer. I have masters in Mechanical
-        Engineering and a Bachelor's in Mechanical Engineering and German. I have a lot of experience using Python
-        for data analysis and machine learning tasks.</p>
-    </div>
+    <script>
+        particlesJS.load("particles-js", "../static/particles/particles.json", function(){
+            console.log('particles loaded');
+        })
+    </script>
 
 </body>
 </html>

@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <title>Title</title>
     {% include 'includes/_links.html' %}
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div class="small-banner">
+    <div id="particles-js">
         {% include 'includes/_navbar.html' %}
 
-        <h1 class="ml-4 mt-2" style="color: white">Skills</h1>
+        <div class="container">
+            <h1>Skills</h1>
+
+            <div class="col mt-4">
+                <h2>Programming Languages</h2>
+                <p>Python, Swift, MATLAB, etc...</p>
+                <br/>
+                <h2>Libraries</h2>
+                <p>Tensorflow, ScikitLearn, NumPy, Pandas</p>
+            </div>
+        </div>
+
     </div>
 
-    <div class="col">
-        <i class="devicon-python-plain-wordmark" style="width:50px; height:50px"></i>
-    </div>
+    <script>
+        particlesJS.load("particles-js", "../static/particles/particles.json", function(){
+            console.log('particles loaded');
+        })
+    </script>
 
 </body>
 </html>

@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <title>Title</title>
     {% include 'includes/_links.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div class="small-banner">
+    <div id="particles-js">
         {% include 'includes/_navbar.html' %}
 
-        <h1 class="ml-4 mt-2" style="color: white">Resume</h1>
+        <div class="col col-lg-6" style="position: absolute">
+            <h1>Resume</h1>
+
+            <a href="../static/Resume.pdf">Resume</a>
+        </div>
+
     </div>
+
+    <script>
+        particlesJS.load("particles-js", "../static/particles/particles.json", function(){
+            console.log('particles loaded');
+        })
+    </script>
 
 </body>
 </html>

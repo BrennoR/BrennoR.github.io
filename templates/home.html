@@ -5,30 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     {% include 'includes/_links.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
     <title>Brenno Ribeiro</title>
   </head>
   <body>
 
-    <!-- Nav Bar -->
-
-
-    <div class="big-banner" style="height: 670px">
+    <div id="particles-js">
         {% include 'includes/_navbar.html' %}
 
-        <div class="row" style="margin-top: 160px">
-            <div class="card mx-auto text-center" style="width: 28rem; background-color: transparent; border-color: white">
+        <div class="col text-center" style="margin-top: 160px; position: absolute;
+        margin-left: auto;  margin-right: auto; left: 0; right: 0;">
+            <div class="card mx-auto text-center" style="width: 28rem; background-color: transparent;
+                border: 3px solid black; display: block">
                 <div class="card-block">
-                    <h3 class="card-title" style="color: white; font-size: 52px">Brenno Ribeiro</h3>
+                    <h3 class="card-title" style="color: black; font-size: 52px">Brenno Ribeiro</h3>
                 </div>
             </div>
-        </div>
 
+            <p style="color: black; margin-top: 30px; font-size: 23px">
+                Mechanical Engineer, Aspiring Machine<br/>Learning Specialist
+            </p>
 
-        <div class="col text-center mt-4">
-            <p style="font-size:23px; color: white">Mechanical Engineer, Aspiring Machine<br/>Learning Specialist</p>
             <ul class="list-inline mt-5">
               <li class="list-inline-item">
                   <a class="link-test" href="https://github.com/BrennoR"
@@ -57,6 +56,12 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        particlesJS.load("particles-js", "../static/particles/particles.json", function(){
+            console.log('particles loaded');
+        })
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
