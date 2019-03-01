@@ -24,6 +24,16 @@ def skills():
     return render_template('skills.html')
 
 
+@app.route('/education')
+def education():
+    return render_template('education.html')
+
+
+@app.route('/experience')
+def experience():
+    return render_template('experience.html')
+
+
 @app.route('/resume')
 def resume():
     return render_template('resume.html')

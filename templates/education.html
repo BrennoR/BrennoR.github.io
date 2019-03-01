@@ -3,8 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    {% include 'includes/_links.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 </head>
 <body>
+    <div id="particles-js">
+        {% include 'includes/_navbar.html' %}
+
+        <div class="container" style="position: absolute;">
+            <h1>Education</h1>
+
+            <div class="container mt-4 mb-5">
+                <h3>University of Rhode Island</h3>
+                <h5 style="color: slategrey">Masters of Science in Mechanical Engineering</h5>
+                <p>Performed research on the development of detection methods and microfluidic devices
+                    for phosphate detection in water. Took courses in deep learning, machine learning,
+                and advanced statistical methods.</p>
+                <ul>
+                  <li>Developed an iOS application to colorimetrically quantify phosphate levels based on
+                      measured RGB values</li>
+                  <li>Created an infrared box with 850nm emitters in order to take advantage of the absorption
+                  peak in the Molybdenum Blue method. Imaged the box using a NoIR camera with a Raspberry Pi.
+                  RAW Bayer data was used to calibrate and measure different phosphate test strips.</li>
+                  <li>Built an online data center to interface with the colorimetry app. The data center could
+                  be used to easily collect phosphate measurements from various devices in various locations across
+                  Rhode Island.</li>
+                  <li>Developed a fluorescent paper-based phosphate test strip using Europeum spotted carbon
+                      nano dots. Constructed a UV-Vis box with an excitation wavelength of 370nm. Measured
+                  fluorescence based on RGB values.</li>
+                </ul>
+            </div>
+
+            <div class="container mb-5">
+                <h3>Technische Universität Darmstadt</h3>
+                <h5 style="color: slategrey">German Studies</h5>
+                <p>Spent the last year of my Bachelors abroad in Germany as part of the International Engineering
+                    Program at URI. Half a year was spent at TU Darmstadt developing language and technical skills
+                in German. The other half was spent interning for Porsche's Electric Powertrains and Transmissions
+                R&D Division in Weissach.</p>
+                <ul>
+                    <li>Worked extensively in systems engineering projects utilizing MATLAB and Simulink</li>
+                    <li>Performed research at the Institute for Internal Combustion Engines and Powertrains</li>
+                    <li>Took engineering, culture, and language courses in German</li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3>University of Rhode Island</h3>
+                <h5 style="color: slategrey">Bachelor of Science in Mechanical Engineering</h5>
+                <h5 style="color: slategrey">Bachelor of Art in German</h5>
+                <ul>
+                    <li>Took part in the German International Engineering Program</li>
+                    <li>Diverse curriculum from an ABET-accredited program</li>
+                    <li>Vice president of the URI Powerlifting Team in the 2014-2015 season</li>
+                </ul>
+            </div>
+        </div>
+
+
+    <script>
+        particlesJS.load("particles-js", "../static/particles/particles.json", function(){
+            console.log('particles loaded');
+        })
+    </script>
 
 </body>
 </html>
