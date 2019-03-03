@@ -1,20 +1,3 @@
-.big-banner {
-    background-image: url("../static/images/ny_site_test.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.small-banner {
-    background-image: url("../static/images/mountains_test.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 120px;
-}
-
 .link-test {
     display: block;
     margin: 0 7px;
@@ -51,3 +34,8 @@
     margin-right: 15px;
     height: 60px;
 }
+
+.devicon-git-plain, .devicon-git-plain-wordmark {
+
+}
+
