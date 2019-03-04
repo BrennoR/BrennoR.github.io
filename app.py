@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_file
 
 app = Flask(__name__)
 
@@ -36,7 +36,7 @@ def experience():
 
 @app.route('/resume')
 def resume():
-    return render_template('resume.html')
+    pass
 
 
 @app.route('/contact')
