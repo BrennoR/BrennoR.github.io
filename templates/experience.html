@@ -8,8 +8,10 @@
 
 </head>
 <body>
-    <div id="particles-js">
-        {% include 'includes/_navbar.html' %}
+{#    <div id="particles-js">#}
+    {% include 'includes/_navbar.html' %}
+    <div class="body-particles">
+
 
         <div class="container" style="position: absolute;">
             <h1>Experience</h1>
@@ -94,6 +96,9 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="particles-js"></div>
 
     <script>
         particlesJS.load("particles-js", "../static/particles/particles.json", function(){

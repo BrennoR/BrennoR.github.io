@@ -12,7 +12,6 @@
   </head>
   <body>
 
-    <div id="particles-js">
         {% include 'includes/_navbar.html' %}
 
         <div class="col text-center" style="margin-top: 160px; position: absolute;
@@ -55,7 +54,8 @@
               </li>
             </ul>
         </div>
-    </div>
+
+    <div id="particles-js"></div>
 
     <script>
         particlesJS.load("particles-js", "../static/particles/particles.json", function(){
@@ -67,5 +67,6 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
   </body>
-  {% include 'includes/_footer.html' %}
+    {% include 'includes/_footer.html' %}
+
 </html>
