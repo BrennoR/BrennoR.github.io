@@ -9,11 +9,13 @@
 </head>
 <body>
 
-    <div id="particles-js">
+        <div class="particles-content">
         {% include 'includes/_navbar.html' %}
 
+            <h1 class="ml-3 mt-3">Projects</h1>
+
         <div class="container", style="position: absolute">
-          <h1>Projects</h1>
+{#          <h1>Projects</h1>#}
 
           <div class="tabs mt-3 ml-2">
               <div class="tab-2">
@@ -68,6 +70,8 @@
 
     </div>
 
+        <div id="particles-js"></div>
+
 
     <script>
         particlesJS.load("particles-js", "../static/particles/particles.json", function(){
@@ -76,5 +80,5 @@
     </script>
 
 </body>
-{% include 'includes/_footer.html' %}
+{#{% include 'includes/_footer.html' %}#}
 </html>

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,15 +9,16 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
     <title>Brenno Ribeiro</title>
-  </head>
-  <body>
+</head>
+<body>
 
+    <div class="particles-content">
         {% include 'includes/_navbar.html' %}
 
         <div class="col text-center" style="margin-top: 160px; position: absolute;
-        margin-left: auto;  margin-right: auto; left: 0; right: 0;">
+            margin-left: auto;  margin-right: auto; left: 0; right: 0;">
             <div class="card mx-auto text-center" style="width: 28rem; background-color: transparent;
-                border: 3px solid black; display: block">
+                    border: 3px solid black; display: block">
                 <div class="card-block">
                     <h3 class="card-title mx-auto" style="color: black; font-size: 52px">Brenno Ribeiro</h3>
                 </div>
@@ -28,45 +29,49 @@
             </p>
 
             <ul class="list-inline mt-5">
-              <li class="list-inline-item">
-                  <a class="link-test" href="https://github.com/BrennoR"
-                     style="background-image: url(../static/images/GitHub-Mark-64px.png)">
-                      Github
-                  </a>
-              </li>
-              <li class="list-inline-item">
-                  <a class="link-test" href="https://www.linkedin.com/in/brenno-ribeiro-6554b714a/"
-                     style="background-image: url(../static/images/linkedin-logo-button.svg)">
-                      LinkedIn
-                  </a>
-              </li>
-              <li class="list-inline-item">
-                  <a class="link-test" href="https://www.facebook.com/brenno.ribeiro.144"
-                     style="background-image: url(../static/images/facebook-logo-button.svg)">
-                      Facebook
-                  </a>
-              </li>
-              <li class="list-inline-item">
-                  <a class="link-test" href="https://www.instagram.com/brennobrenno/"
-                     style="background-image: url(../static/images/instagram-logo.svg)">
-                      Instagram
-                  </a>
-              </li>
+                <li class="list-inline-item">
+                    <a class="link-test" href="https://github.com/BrennoR"
+                       style="background-image: url(../static/images/GitHub-Mark-64px.png)">
+                        Github
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="link-test" href="https://www.linkedin.com/in/brenno-ribeiro-6554b714a/"
+                       style="background-image: url(../static/images/linkedin-logo-button.svg)">
+                        LinkedIn
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="link-test" href="https://www.facebook.com/brenno.ribeiro.144"
+                       style="background-image: url(../static/images/facebook-logo-button.svg)">
+                        Facebook
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="link-test" href="https://www.instagram.com/brennobrenno/"
+                       style="background-image: url(../static/images/instagram-logo.svg)">
+                        Instagram
+                    </a>
+                </li>
             </ul>
         </div>
+{#        {% include 'includes/_footer.html' %}#}
+    </div>
+
+    <div class="spacer"></div>
+
+    {% include 'includes/_footer.html' %}
 
     <div id="particles-js"></div>
 
+
     <script>
-        particlesJS.load("particles-js", "../static/particles/particles.json", function(){
+        particlesJS.load("particles-js", "../static/particles/particles.json", function () {
             console.log('particles loaded');
         })
     </script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-  </body>
-    {% include 'includes/_footer.html' %}
+</body>
+{#{% include 'includes/_footer.html' %}#}
 
 </html>

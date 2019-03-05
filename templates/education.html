@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<incl lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,11 +8,13 @@
 
 </head>
 <body>
-    <div id="particles-js">
+        <div class="particles-content">
         {% include 'includes/_navbar.html' %}
 
+            <h1 class="ml-3 mt-3">Education</h1>
+
         <div class="container" style="position: absolute;">
-            <h1>Education</h1>
+{#            <h1>Education</h1>#}
 
             <div class="container mt-4 mb-5">
                 <div class="d-flex flex-column flex-md-row justify-content-between">
@@ -83,6 +85,11 @@
         </div>
     </div>
 
+        <div class="spacer"></div>
+        {% include 'includes/_footer.html' %}
+
+        <div id="particles-js"></div>
+
     <script>
         particlesJS.load("particles-js", "../static/particles/particles.json", function(){
             console.log('particles loaded');
@@ -90,5 +97,4 @@
     </script>
 
 </body>
-{% include 'includes/_footer.html' %}
 </html>

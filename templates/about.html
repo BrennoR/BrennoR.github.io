@@ -7,12 +7,14 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div id="particles-js">
+    <div class="particles-content">
         {% include 'includes/_navbar.html' %}
 
-        <div class="row ml-3" style="position: absolute">
+        <h1 class="ml-3 mt-3">About</h1>
+
+        <div class="row ml-3" style="position: absolute; margin-top: 1em">
             <div class="col col-lg-6" >
-                <h1>About</h1>
+
 
                 <h2 class="mt-5">Hi, I'm Brenno!</h2>
                 <p>I am a mechanical engineer, software developer, and aspiring machine learning specialist.
@@ -32,6 +34,8 @@
 
     </div>
 
+    <div id="particles-js"></div>
+
     <script>
         particlesJS.load("particles-js", "../static/particles/particles.json", function(){
             console.log('particles loaded');
@@ -39,5 +43,5 @@
     </script>
 
 </body>
-{% include 'includes/_footer.html' %}
+{#{% include 'includes/_footer.html' %}#}
 </html>
