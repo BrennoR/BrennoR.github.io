@@ -1,6 +1,9 @@
-from flask import Flask, render_template, send_file
+from flask import Flask, render_template
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
+
+mail = Mail(app)
 
 
 @app.route('/')
@@ -42,6 +45,16 @@ def resume():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+
+@app.route('/mailing', methods=['GET', 'POST'])
+def mail():
+    msg = Message("Hello",
+                  sender="brenno_ribeiro@my.uri.edu",
+                  recipients=["brenno_ribeiro@my.uri.edu"])
+    msg.body = "testing"
+    msg.html = "<b>testing</b>"
+    mail.send(msg)
 
 
 if __name__ == '__main__':

@@ -5,70 +5,113 @@
     <title>Title</title>
     {% include 'includes/_links.html' %}
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-{#    <link rel="stylesheet" href="../static/projects_layout.css">#}
 </head>
 <body>
 
         <div class="particles-content">
         {% include 'includes/_navbar.html' %}
 
-            <h1 class="ml-3 mt-3">Projects</h1>
+        <h1 class="ml-3 mt-3">Projects</h1>
 
-        <div class="container", style="position: absolute">
-{#          <h1>Projects</h1>#}
+            <div class="container" style="position: absolute">
+              <ul class="nav nav-tabs nav-fill justify-content-center mt-2">
+                <li class="nav-item active">
+                    <a class="nav-link active" data-toggle="tab" href="#all">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#ml">Machine Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#science">Scientific</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#ios">iOS</a>
+                </li>
+              </ul>
 
-          <div class="tabs mt-3 ml-2">
-              <div class="tab-2">
-                <label for="tab2-1">All</label>
-                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-                <div>
-                  <a href="#">
-                      <img class="projects-img" src="../static/images/Pass-Foto.jpg">
-                  </a>
-                  <a href="#">
-                      <img class="projects-img" src="../static/images/Pass-Foto.jpg">
-                  </a>
-                </div>
-              </div>
-              <div class="tab-2">
-                <label for="tab2-2">Scientific</label>
-                <input id="tab2-2" name="tabs-two" type="radio">
-                <div class="row">
-                    <div class="col">
-                  <a href="#">
-                      <img class="projects-img" src="../static/images/Pass-Foto.jpg">
-                  </a>
+              <div class="tab-content">
+                <div id="all" class="tab-pane fade in show active">
+                    <div class="row mt-4 mb-4">
+                        <div class="col col-lg-3">
+                            <a href="#">
+                                <img class="projects-img" src="../static/images/decision_maker.png">
+                            </a>
                         </div>
-                    <div class="col">
-                    <p>Quisque sit amet turpis leo. Maecenas sed dolor </p>
+                        <div class="col">
+                            <h1>Shark Classifier</h1>
+                            <h5>Python</h5>
                         </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col col-lg-3">
+                            <a href="#">
+                                <img class="projects-img" src="../static/images/decision_maker.png">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h1>Shark Classifier</h1>
+                            <h5>Python</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="ml" class="tab-pane fade">
+                  <div class="row mt-4 mb-4">
+                        <div class="col col-lg-3">
+                            <a href="#">
+                                <img class="projects-img" src="../static/images/decision_maker.png">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h1>Shark Classifier</h1>
+                            <h5>Python</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="science" class="tab-pane fade">
+                  <h3>Scientific</h3>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+                <div id="ios" class="tab-pane fade">
+                    <div class="row mt-4 mb-4">
+                        <div class="col col-lg-3">
+                            <a href="#">
+                                <img class="projects-img" src="../static/images/decision_maker.png">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h1>Colorimetry App</h1>
+                            <h5>Swift</h5>
+                        </div>
+                    </div>
+                  <div class="row mb-4">
+                        <div class="col col-lg-3">
+                            <a href="#">
+                                <img class="projects-img" src="../static/images/decision_maker.png">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h1>Decision Maker</h1>
+                            <h5>Swift</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-3">
+                            <a href="#">
+                                <img class="projects-img" src="../static/images/calculator.png">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h1>Calculator <\></h1>
+                            <h5>Swift</h5>
+                        </div>
+                    </div>
                 </div>
               </div>
-              <div class="tab-2">
-                <label for="tab2-3">Machine Learning</label>
-                <input id="tab2-3" name="tabs-two" type="radio">
-                <div>
-                  <h4>Machine Learning</h4>
-                  <p>Quisque sit amet turpis leo. Maecenas sed dolor mi. Pellentesque varius elit in neque ornare commodo ac non tellus. Mauris id iaculis quam. Donec eu felis quam. Morbi tristique lorem eget iaculis consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean at tellus eget risus tempus ultrices. Nam condimentum nisi enim, scelerisque faucibus lectus sodales at.</p>
-                </div>
-              </div>
-              <div class="tab-2">
-                <label for="tab2-4">iOS</label>
-                <input id="tab2-4" name="tabs-two" type="radio">
-                  <div>
-                  <a href="#">
-                      <img class="projects-img" src="../static/images/calculator.png">
-                  </a>
-                  <a href="#">
-                      <img class="projects-img" src="../static/images/decision_maker.png">
-                  </a>
-                </div>
-              </div>
+
             </div>
 
         </div>
 
-    </div>
 
         <div id="particles-js"></div>
 
