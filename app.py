@@ -47,7 +47,7 @@ def contact():
     return render_template('contact.html')
 
 
-@app.route('/mailing', methods=['GET', 'POST'])
+@app.route('/mailing', methods=['POST'])
 def mail():
     msg = Message("Hello",
                   sender="brenno_ribeiro@my.uri.edu",
@@ -55,6 +55,7 @@ def mail():
     msg.body = "testing"
     msg.html = "<b>testing</b>"
     mail.send(msg)
+    return True
 
 
 if __name__ == '__main__':
